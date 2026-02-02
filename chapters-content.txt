@@ -1,0 +1,1064 @@
+## Part 1: Why Information Management Matters
+
+Every organization depends on three fundamental resources (Picot, 1988):
+
+1. **Materials** — the physical building blocks. Without raw materials, nothing can exist.
+2. **Energy** — the driving force. Without energy, no process can run.
+3. **Information** — the guiding intelligence. Without information, decisions cannot be made.
+
+Information is what allows a company to coordinate its materials and energy effectively. This is why **Information Management** exists as a discipline — it treats information as a critical resource that must be planned, organized, and governed just like any other.
+
+> **Key thesis:** The IT landscape grows more complex every year (AI, cloud, containerization, BYOD, etc.). Information Management provides the structure and strategy to handle this complexity.
+
+---
+
+## Part 2: What Is Information?
+
+### The Information Hierarchy: Symbols → Data → Information → Knowledge
+
+This is the foundational framework. Each level builds on the one below it:
+
+| Level | Name | What It Is | Example |
+|-------|------|-----------|---------|
+| 1 | **Symbols** | Raw alphabet: characters, digits, signs `[a-Z, 0-9, +, -, %]` | `F`, `R`, `A`, `5`, `%` |
+| 2 | **Data** | Symbols arranged by syntax (grammar rules) | `FRA:VOW3 +5%` |
+| 3 | **Information** | Data placed into context with meaning (semantics) | "VW stock rose 5% on Frankfurt Exchange" |
+| 4 | **Knowledge** | Information networked in a mind, enabling action (pragmatics) | "VW's e-mobility strategy is working — I should invest" |
+
+**Transitions between levels:**
+
+- **Symbols → Data:** governed by **Syntax** (grammar rules that determine valid expressions)
+- **Data → Information:** governed by **Semantics** (meaning assigned through context)
+- **Information → Knowledge:** governed by **Pragmatics** (actions and actors — what you do with the information)
+
+
+> **Important:** Knowledge is subjective and lives inside a person's mind. It cannot be directly stored in a computer — only information and data can. What we call "knowledge bases" are really structured information that helps humans build knowledge.
+
+### Properties of Information
+
+Information behaves differently from physical goods:
+
+| Property | Meaning |
+|----------|---------|
+| **Immaterial** | No physical form; not consumed through use |
+| **Value-creating** | Provides direct benefits to whoever uses it |
+| **Not a free good** | Costs money to produce, maintain, and distribute |
+| **Context-dependent** | Value changes based on when/where it is used |
+| **Adjustable in value** | Can be increased by filtering, combining, or enriching |
+| **Has quality dimensions** | Measured by completeness, correctness, timeliness, relevance |
+| **Easily copied** | Duplicated perfectly without quality loss |
+| **Requires standardized encoding** | Must use agreed-upon formats (UTF-8, JSON, PDF) to be shared |
+| **Transportable at the speed of light** | Once digital, travels globally almost instantly |
+
+### Three Perspectives on Information
+
+| Perspective | Core Idea | Focus |
+|-------------|-----------|-------|
+| **Information as a Process** | "I am being informed" — a dynamic act of communicating | The flow between sender and receiver |
+| **Information as Knowledge** | "It's intangible, subjective, in my mind" — equated with personal understanding | Interpretation depends on prior knowledge |
+| **Information as a Thing** | "It can be stored and retrieved" — a tangible, storable object (document, file, record) | Most relevant to IT systems |
+
+### Shannon Information Theory
+
+Shannon defined information as a **quantification of surprise**: the more unexpected a message, the more information it carries. Completely predictable = zero information.
+
+**Self-information:** `I(x) = -log₂(P(x))`
+
+Where `P(x)` is the probability of event x. Result is in **bits**.
+
+**Entropy** — the average information across all possible events:
+
+`H = -Σ(pᵢ · log₂(pᵢ))` for all events i
+
+> **Practical meaning:** Entropy = minimum bits needed to perfectly compress the data. High entropy → high randomness → more bits. Low entropy → predictable → fewer bits.
+
+### The Role of Context
+
+Context fundamentally changes how data and information are interpreted. The same words can carry completely different meanings depending on context (e.g., violent-sounding statements that are actually about a video game).
+
+**Five questions to evaluate any piece of information:**
+
+- **How** was it created?
+- **When** was it created?
+- **For whom** was it created?
+- **Who** created it?
+- **Why** was it created?
+
+> **Warning:** Data stripped of its context can be misleading or used to deceive. This is where ethical issues and room for manipulation arise.
+
+---
+
+## Part 3: Information Systems
+
+### What Is an Information System?
+
+> **Definition:** An Information System takes **data as input** and produces **information as output** — transforming raw data into something meaningful and actionable.
+
+**Example:** A Warehouse Management System takes in customer orders, arrival records, and stocktaking results. It outputs: "Which goods need to be ordered?" — turning raw data into a decision-ready piece of information.
+
+### Components of an Information System
+
+An IS consists of two major parts:
+
+1. **Human** — the people who use, operate, and make decisions based on the system
+2. **Machine** — the technical side:
+   - **Hardware** — physical servers, computers, network equipment
+   - **Application** — the software layer:
+     - **Data** — what the system stores and processes
+     - **Processes** — workflows composed of:
+       - **Functions** — individual operations (e.g., a database lookup)
+       - **Connections** — logic linking functions (e.g., "if lookup returns >0 results → show results")
+
+
+**Virtual hospital example:** Human = doctors who register expertise. Hardware = servers + clients. Application = "Search-for-Expert" with data (registered doctors), a search process, a DBMS lookup function, and a connection ("if results >0 → display").
+
+---
+
+## Part 4: Information Management
+
+> **Definition:** Information Management oversees the investment in new information systems and the operation of existing ones. It requires diverse management skills to deliver the benefits of IS investments (Bytheway, 2003).
+
+In simpler terms: IM is about **deciding which IT systems a company needs, building them, running them, and ensuring they deliver value**.
+
+### Viewpoint 1: Task-Oriented
+
+This viewpoint describes IM through four dimensions:
+
+| Dimension | Contents |
+|-----------|----------|
+| **Goals** | Profit/cost reduction, IT strategy, service-orientation, HR development, change management |
+| **Tasks** | IT strategy, IT architecture, service management, project management, controlling, license management, quality management, governance, security, risk, compliance |
+| **Roles** | Translators (bridging business ↔ IT), project leads, point of contact, deciders |
+| **Situations** | Communicate across all levels, indirect governance, broad topic span, "sandwich" position, goal conflicts |
+
+### Viewpoint 2: Layer-Oriented
+
+IM is structured into **three layers**. Each upper layer sends **requirements** downward; each lower layer provides **support** upward:
+
+1. **Information Application** (top) — the business side: what information does the organization need?
+2. **Information and Communication Systems** (middle) — the software: which applications process the information?
+3. **Infrastructure** (bottom) — the hardware: storage, networks, servers that run everything
+
+Each layer depends on the one below: business needs → system requirements → infrastructure decisions.
+
+
+### Viewpoint 3: Consolidated (Krcmar Model)
+
+The Krcmar model combines all perspectives into one framework:
+
+**Overarching: Managing Information Management**
+IT Strategy, IT Governance, IT Processes, IT HR, IT Controlling, IT Security
+
+This block governs three managed areas:
+
+| Managed Area | Scope | Audience |
+|-------------|-------|----------|
+| **Information Economy** | Demand, Supply, Usage | **IT Users** (IT is a tool) |
+| **Information Systems** | Data, Processes, Application Life Cycle & Landscape | **IT Specialists** (IT is their work content) |
+| **Information & Communication Technologies** | Storage, Processing, Communication, Tech Stacks | Supports the systems layer above |
+
+
+### The CIO (Chief Information Officer)
+
+| Aspect | Previously | Now |
+|--------|-----------|-----|
+| **Reports to** | CFO | CEO (often board member) |
+| **Perceived as** | Cost factor, "head of data center" | Strategic driver of innovation |
+| **Focus** | Back-office operations | Driving innovation across the company |
+
+This shift reflects how IT moved from being a cost center to a strategic driver of business value.
+
+================================================================================
+
+## Introduction
+
+The **Information Economy** is the demand-side layer of the Krcmar model (see Chapter 1). Its core problem: organizations have plenty of data, but **decision-makers need information** — data that is relevant, timely, and contextualized. This chapter covers the three pillars of the Information Economy: **eliciting demand** (who needs what), **managing supply** (how we deliver it), and **organizing sources and resources** (where it comes from and how we structure it).
+
+---
+
+## Information Logistics (Augustin, 1990)
+
+> **Definition:** The **logistical principle** (Augustin, 1990) states that we must supply:
+> - The **right information**
+> - At the **right time**
+> - In the **right amount**
+> - At the **right place**
+> - In the **required quality**
+
+### The Information Logistics Cycle
+
+
+| Stage | Activity | Question |
+|-------|----------|----------|
+| **Information Demand** | Identify what information is needed | What do stakeholders require? |
+| **Information Sources** | Find where the needed information exists | Which internal/external sources are available? |
+| **Information Resources** | Process and prepare the information | How do we transform raw sources into usable form? |
+| **Information Supply** | Deliver information to those who need it | How do we make it available at the right time? |
+
+The rest of this chapter walks through each stage in order: demand elicitation (Section 3), sources and resources (Section 4), and supply (Section 5).
+
+---
+
+## Eliciting Information Demand
+
+Three sub-steps: **identify stakeholders and personas**, **elicit people's needs** (subjective — interviews, surveys, workshops), and **understand company needs** (objective — strategic analysis).
+
+### Picot's Three Dimensions (Picot, 1988)
+
+Information demand emerges from the **overlap** of three dimensions:
+
+
+**Information Demand** = the intersection of all three dimensions. The gaps between dimensions have specific meanings:
+
+| Gap | Meaning | Implication |
+|-----|---------|-------------|
+| Objective but **not** Subjective | The person doesn't realize they need this information | **Training gap** — awareness must be raised |
+| Subjective but **not** Objective | The person thinks they need it, but it's not task-relevant | **Noise** — creates information overload if supplied |
+| Needed (objective + subjective) but **not** Available | The information simply doesn't exist or isn't accessible | **Information gap** — requires new sources or systems |
+| Available but **not** Needed | Information exists but no one requires it | **Overload risk** — should not be pushed to users |
+
+| Approach | Method | Examples |
+|----------|--------|----------|
+| **Subjective** | Derive requirements from personal interpretation of the task | Interviews, wishlists |
+| **Objective** | Derive requirements from inter-subjectively validated interpretation | Strategic analysis, process analysis |
+| **Mixed** | Combine both — typically objective first, then subjective | Process analysis followed by interviews |
+
+### Stakeholders and Personas
+
+#### Stakeholders
+
+> **Definition:** A **stakeholder** is a person or organization who influences a system's requirements or who is impacted by that system. Influence can also be indirect — e.g., stakeholders may follow instructions issued by their managers or organizations (Glinz, 2020).
+
+| Level | Stakeholder Types | Information Focus |
+|-------|------------------|-------------------|
+| **Strategic** | Senior management | Strategic direction, high-level KPIs |
+| **Tactical** | Middle management, knowledge workers | Departmental performance, analysis, resource allocation |
+| **Operational** | Operational managers, data workers, production staff | Day-to-day operations, task instructions, data entry |
+
+> **Important:** Different stakeholders view the same system from entirely different perspectives. An end user, a software vendor, and an operations manager each bring their own viewpoint. Accounting for all views is essential for complete requirements.
+
+#### Personas
+
+**Personas** are fictional individuals representing a user group. They are built from empirical data (interviews, analytics), then clustered and prioritized. Each persona captures demographics, goals, frustrations, and motivations — providing concrete guidance instead of designing for a vague, "elastic" user.
+
+### Understanding Company Needs — The Balanced Scorecard (Kaplan & Norton, 1992)
+
+The **Balanced Scorecard** (BSC) links **firm strategy and objectives** to measurable indicators across four perspectives:
+
+
+The arrows are **bidirectional**: strategy defines *what* to measure in each perspective, and the measurements *feed back* to validate or adjust the strategy. Each perspective translates abstract strategic goals into concrete, measurable KPIs — and those KPIs define the **information demand** for the organization's information systems.
+
+| Perspective | Guiding Question | Components |
+|-------------|-----------------|------------|
+| **Financial** | To succeed financially, how should we appear to our shareholders? | Objectives, Measures, Targets, Initiatives |
+| **Customer** | To achieve our vision, how should we appear to our customers? | Objectives, Measures, Targets, Initiatives |
+| **Internal Business Process** | To satisfy shareholders and customers, what processes must we excel at? | Objectives, Measures, Targets, Initiatives |
+| **Learning and Growth** | How will we sustain our ability to change and improve? | Objectives, Measures, Targets, Initiatives |
+
+> **Important:** The BSC is not just a set of KPIs — it explicitly links **Vision and Strategy** to measurable outcomes across all four perspectives, ensuring that information demand is derived from actual strategic objectives rather than ad-hoc requests.
+
+**BSC → Information Demand:** Each BSC perspective generates concrete information needs. For example, a strategic objective like "improve customer retention by 10%" creates demand for churn analytics, satisfaction survey data, and support ticket trends. The BSC thus provides the **objective** side of Picot's framework — it tells us what information the organization *should* need, independent of what individuals *think* they need.
+
+---
+
+## Information Sources & Resources
+
+### Source/Demand Matrix
+
+
+- The **primary IM focus** is fulfilling **internal demand** via **enterprise systems** (top-left cell).
+
+### Information Quality
+
+| Contextual Qualities | Presentational Qualities | Intrinsic Qualities | Access Qualities |
+|---------------------|------------------------|--------------------|--------------------|
+| Currentness | Understandability | Reliability | Accessibility |
+| Completeness | Clarity | Correctness | Maintainability |
+| Appropriate Scope | Uniformity | Objectivity | |
+| Relevance | Unambiguity | Credibility | |
+
+> **Important:** Information quality is not just about correctness — even correct information can fail if it is not current, not accessible, or not presented in an understandable way. All four quality dimensions must be considered.
+
+### From Sources to Resources
+
+An **information source** is any origin of data (a database, a report, a person). When a source is **used recurrently** and managed for reuse, it becomes an **information resource**. The distinction matters: sources are discovered, resources are *engineered* — organized, indexed, and maintained so they can be efficiently found and reused over time.
+
+### Three Approaches to Organizing Resources
+
+| Approach | Structure | Examples |
+|----------|-----------|----------|
+| **Hierarchies** | Tree-structured classification | Taxonomy |
+| **Keywords** | Flat or semi-structured labels | Thesaurus, Tags |
+| **Graphs** | Network of linked concepts | Semantic Web |
+
+### Taxonomies
+
+A **taxonomy** is a hierarchical classification system. Formally, a taxonomy T consists of:
+
+- A set of **labels** L
+- A set of **relationships** R, where every relationship r = ⟨l₁, l₂⟩ with l₁, l₂ ∈ L
+
+Each label can be an **instance** (a specific individual, e.g., "Albert Einstein") or a **class** (a category, e.g., "American physicists"), and the semantics of the relationship R varies accordingly (is-a vs. member-of).
+
+
+> **Important:** In a taxonomy, classes group instances hierarchically, but a single label can appear under multiple parents (e.g., "Einstein" could be under both "American physicists" and "German physicists"). The relationships can form directed acyclic graphs, not just strict trees.
+
+### The Semantic Web (Tim Berners-Lee)
+
+The **Semantic Web** is the graph-based approach to organizing information resources — a vision of a web where machines understand *meaning*, not just syntax. Its architecture builds in layers: **URI/Unicode** provide global identifiers, **XML** provides syntax, **RDF triples** (subject–predicate–object) provide the data model, and **Ontologies** provide shared vocabularies for describing domain concepts and their relationships.
+
+For IM, the Semantic Web matters because it enables **cross-system linking** — information from different enterprise systems can be connected through shared ontologies, reducing data silos and making information resources discoverable across organizational boundaries.
+
+---
+
+## Information Supply: Data Warehouse & ETL
+
+The final step is **delivering** the right information to those who need it. A key infrastructure for this is the **Data Warehouse**.
+
+> **Definition:** A **Data Warehouse** consolidates data from multiple operational systems into a single, query-optimized repository for analysis and reporting.
+
+
+| Stage | Process | Purpose |
+|-------|---------|---------|
+| **Extraction** | Pull data from multiple heterogeneous source systems | Gather raw operational data |
+| **Transformation** | Clean, standardize, and restructure the data | Ensure consistency and quality |
+| **Loading** | Store the processed data in the warehouse | Make it available for analysis |
+
+**What happens during Transformation:** This is the most complex ETL step. It involves **data cleaning** (fixing errors, handling missing values), **deduplication** (merging duplicate records), **format standardization** (unifying date formats, units, encodings), **business rule application** (computing derived fields like profit margins), and **schema mapping** (aligning source schemas to the warehouse's target schema). Without proper transformation, the warehouse inherits the inconsistencies of its source systems.
+
+================================================================================
+
+## Context in the Krcmar Model
+
+This chapter covers **Management of Information Systems** — specifically the **Application Life Cycle and Landscape** within the machine-side of the Krcmar model.
+
+---
+
+## Three Fundamental SE Process Decisions
+
+Every CIO and IT manager faces three fundamental software engineering process decisions:
+
+| # | Decision | Options |
+|---|----------|---------|
+| 1 | **Project or Service** | One-time effort vs. ongoing operation |
+| 2 | **Waterfall or Incremental-Iterative** | Sequential phases vs. repeated cycles |
+| 3 | **Inhouse or Outsource** | Internal teams vs. external providers (offshore or nearshore) |
+
+---
+
+## Decision 1: Project vs. Service
+
+> **Definition:** A **Project** (DIN69901) has a defined goal, a defined time span, and is usually run once. A **Service** has a defined goal, a defined target group, and runs indefinitely.
+
+| Dimension | Project | Service |
+|-----------|---------|---------|
+| **Leadership** | Project Manager | Service Owner |
+| **Time horizon** | Fixed (defined time span) | Indefinite (ongoing) |
+| **Justification** | Needs re-justification every fixed period | Justified by ongoing demand |
+| **Strength** | Hypothesis testing (validations, prototypes) | Stability, continuous improvement |
+| **Weakness** | Poor knowledge transfer and documentation | Less suited for exploratory work |
+
+> **Important:** Projects and services are not mutually exclusive — organizations use projects to build capabilities, then transition them into services for ongoing operation.
+
+---
+
+## Decision 2: Waterfall vs. Incremental-Iterative
+
+### Waterfall (Royce)
+
+The **Waterfall model** (Royce) is sequential — each phase completes before the next begins:
+
+**System Requirements → Software Requirements → Preliminary Program Design → Analysis → Program Design → Coding → Testing → Operations**
+
+> **Important:** Royce's original model included feedback loops between adjacent phases. The "pure waterfall" with no feedback is a misinterpretation.
+
+### The V-Model
+
+The **V-Model** extends waterfall by pairing each construction phase with a corresponding test level.
+
+
+> **Important:** Test planning starts during the corresponding design phase, not after coding. Each test level validates artifacts from its paired construction phase.
+
+### Agile Development
+
+#### The Agile Manifesto (2001)
+
+The Agile Manifesto establishes four core values — left is valued **more**, right is **not rejected**:
+
+| Valued More | Over | Valued Less |
+|-------------|------|-------------|
+| **Individuals and interactions** | over | Processes and tools |
+| **Working software** | over | Comprehensive documentation |
+| **Customer collaboration** | over | Contract negotiation |
+| **Responding to change** | over | Following a plan |
+
+#### 12 Agile Principles
+
+| # | Core Idea | # | Core Idea |
+|---|-----------|---|-----------|
+| 1 | Early, continuous delivery | 7 | Working software = progress |
+| 2 | Welcome changing requirements | 8 | Sustainable pace |
+| 3 | Deliver frequently (prefer short) | 9 | Technical excellence |
+| 4 | Daily business-dev collaboration | 10 | Simplicity (maximize work not done) |
+| 5 | Motivated individuals + trust | 11 | Self-organizing teams |
+| 6 | Face-to-face communication | 12 | Regular reflection + adjustment |
+
+### Scrum
+
+**Scrum** is an agile framework organizing work into fixed-length **Sprints**.
+
+| Category | Elements |
+|----------|----------|
+| **Roles** | Product Owner, Development Team, Scrum Master |
+| **Artifacts** | Product Backlog, Sprint Backlog, Product Increment |
+| **Events** | Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective |
+
+
+### Kanban
+
+**Kanban** ("signboard") originated at Toyota (1947); David J. Anderson brought it to software development.
+
+> **Definition:** Kanban's core principle is that **limiting WIP (Work in Progress) increases throughput**. A Kanban board visualizes workflow as columns, each with a WIP limit.
+
+Kanban suits process improvement and services — no prescribed roles or fixed iterations; work flows continuously.
+
+---
+
+## Decision 3: Inhouse vs. Outsource
+
+> **Definition:** **Outsourcing** is the process of paying to have part of a company's work done by another company (Cambridge Dictionary).
+
+> **Definition:** **Offshoring** is the practice of basing a business or part of a business in a different country, usually because this involves paying less tax or other costs (Cambridge Dictionary).
+
+> **Definition:** **Nearshoring** is relocation of business processes to (typically) lower cost foreign locations, but in close geographical proximity.
+
+### Offshoring: Expectations vs. Reality
+
+| Expected Benefit | Achievement | Key Obstacle |
+|-----------------|-------------|--------------|
+| **Cost savings** | Non-achieved | Significant start-up overhead |
+| **Capacity** | Partial | Communication problems, productivity gap |
+| **Quality** | Non-achieved | Knowledge loss, perceived quality decrease |
+| **Speed** | Non-achieved | Believed faster if kept onshore |
+| **Innovation + Competitive advantage** | Partial | Failure to respond to acute problems |
+
+Cost savings rarely materialize due to start-up overhead and communication costs; achieved benefits tend to be about **access to talent**, while tight-collaboration benefits (quality, speed, innovation) fall short.
+
+---
+
+## DevOps
+
+> **Definition:** **DevOps** is a collaborative and multidisciplinary effort within an organization to automate continuous delivery of new software versions, while guaranteeing their correctness and reliability (Leite et al., 2019).
+
+**Dev side:** Plan → Discover → Build → Test | **Ops side:** Deploy → Operate → Observe | **Center:** Continuous Feedback. The entire loop is wrapped in Collaboration and Communication — DevOps is a cultural shift, not just tooling.
+
+
+### DevOps Tool Categories
+
+| Category | Goal | Key Concepts |
+|----------|------|-------------|
+| **Knowledge sharing** | Human collaboration | Culture of collaboration, breaking down silos |
+| **Source code management** | Continuous delivery | Versioning, sharing knowledge |
+| **Build process** | Continuous delivery | Release engineering, test automation, static analysis |
+| **Continuous Integration** | Continuous delivery | CI pipeline, artifact management, automation |
+| **Deployment automation** | Continuous delivery + Reliability | Infrastructure as code, containerization, cloud services |
+| **Monitoring & Logging** | Reliability | "You built it, you run it", runtime monitoring, alerting |
+
+> **Important:** "You built it, you run it" — developers operate their own code in production, creating a direct feedback loop.
+
+---
+
+## DevSecOps
+
+**DevSecOps** extends DevOps by integrating **Security** into every phase rather than treating it as a final gate.
+
+| Phase | Security Activities |
+|-------|-------------------|
+| **Develop** | Requirements analysis, Secure coding |
+| **Build** | SAST (Static Application Security Testing) |
+| **Test** | White box DAST, Black box DAST |
+| **Release** | Digital signing |
+| **Deliver** | Secure transfer, Security analysis |
+| **Deploy** | Security configuration, Security scanning |
+| **Operate** | Security patching |
+| **Monitor** | Security monitoring, Security auditing |
+
+> **Important:** Security is **shifted left** — it starts at requirements and coding, catching vulnerabilities earlier when they are cheaper to fix.
+
+---
+
+## Requirements Engineering Process Facets
+
+RE processes are characterized along three facets:
+
+| Facet | Spectrum |
+|-------|----------|
+| **Time** | Linear ↔ Iterative |
+| **Target** | Market-oriented ↔ Customer-specific |
+| **Purpose** | Exploratory ↔ Prescriptive |
+
+| RE Process Type | Time | Target | Purpose | Description |
+|----------------|------|--------|---------|-------------|
+| **Product-oriented RE** | Iterative | Market-oriented | Exploratory | Building for a market; requirements discovered through exploration and experimentation |
+| **Contractual RE** | Linear | Customer-specific | Prescriptive | Building under contract; requirements defined upfront |
+| **Participatory RE** | Iterative | Customer-specific | Both | Building collaboratively; customer actively participates in ongoing discovery |
+
+---
+
+## Models and System Definition
+
+Two ways to communicate system knowledge: **Speak** (natural language) vs. **Specify** (formal models).
+
+> **Definition:** A **model** is an **abstraction** from reality with a **specific purpose**. Models filter out everything except what is relevant to the creator/user.
+
+### Three Properties of Models (Stachowiak)
+
+| Property | Meaning |
+|----------|---------|
+| **Mapping** | Models represent something in the real world |
+| **Reduction** | Models leave out irrelevant details |
+| **Pragmatics** | Models serve a specific purpose |
+
+### System Definition (SuD)
+
+A **System under Development (SuD)** has five key properties:
+
+| Property | Meaning |
+|----------|---------|
+| **Operational context** | Environment that influences or is influenced by the SuD (Humans, Processes, Services/Data, Other Systems) |
+| **Context boundary** | Separates the operational context from the non-relevant environment |
+| **Inner structure** | Related elements composing the system |
+| **Interfaces** | Distinguish the SuD from its context; define the system boundary |
+| **Behavior** | Observable at the interfaces |
+
+> **Important:** The system boundary (what is inside) vs. the context boundary (what is relevant outside) is fundamental to scoping any IS project. Actors interact through interfaces, from outside the system boundary but within the context boundary.
+
+
+---
+
+## The Unified Modeling Language (UML)
+
+**UML** was created by Booch, Jacobson, and Rumbaugh (the "Three Amigos") and is defined by the **Object Management Group (OMG)**.
+
+### UML Diagram Types
+
+| Category | Questions It Answers |
+|----------|---------------------|
+| **Structure Diagrams** | What **elements** make up the system? What are the syntactic **interfaces**? What **configurations** are possible? |
+| **Behavior Diagrams** | Which **stakeholders/actors** are involved? Which **use cases**? What is the **input/output behavior**? What **states** and transitions? |
+
+### UML Use Case Diagrams
+
+| Element | Notation | Meaning |
+|---------|----------|---------|
+| **Actor** | Stick figure (human) or rectangle (system) | A role that interacts with the system |
+| **Use Case** | Oval/ellipse | A functionality the system provides |
+| **System Boundary** | Rectangle enclosing use cases | Defines inside vs. outside the system |
+| **Association** | Solid line (actor ↔ use case) | Actor participates in a use case |
+| **Include** | Dashed arrow with \<\<include\>\> | Mandatory sub-behavior always included |
+
+### Detailed Use Cases: Cockburn Template
+
+The Cockburn template describes *how* each use case works step by step:
+
+| Field | Purpose |
+|-------|---------|
+| **Use Case Name** | Short descriptive name |
+| **Goal in Context** | User story: "As a [role], I want to [action], so that [benefit]" |
+| **Precondition** | What must be true before the use case starts |
+| **Success End Condition** | What is true when the use case succeeds |
+| **Failed End Condition** | What happens when the use case fails |
+| **Main Success Scenario** | Numbered steps for the happy path |
+| **Alternatives** | Variations branching from specific steps |
+
+---
+
+## UML Activity Diagrams
+
+> **Definition:** An **activity** specifies an input-to-output transformation via a sequence of **actions**. Activity diagrams visualize workflows, business processes, and use case steps.
+
+### Activity Diagram Elements
+
+| Element | Notation | Meaning |
+|---------|----------|---------|
+| **Action** | Rounded rectangle | A single step in the activity |
+| **Initial node** | Filled circle | Start of the activity |
+| **Final node** | Circled filled circle | End of the activity |
+| **Decision / Merge node** | Diamond | Only one outgoing edge taken (guard condition) |
+| **Fork / Join node** | Thick bar | All outgoing edges taken (parallel execution) |
+| **Swimlanes** | Vertical or horizontal partitions | Who executes which action |
+| **Object flow** | Dashed arrow with object | Data passed between actions |
+
+> **Important:** Activity diagrams can visualize Cockburn use case steps, with **swimlanes** showing which actor performs each action. Decision nodes use **guard conditions** (boolean expressions in square brackets) to choose the outgoing path.
+
+
+---
+
+## Mental Models
+
+> **Definition:** A **Mental Model** (Norman, 1983) is an organized understanding and mental representation of knowledge about key elements of the system under consideration.
+
+Mental models underpin nearly every IS activity: communication between stakeholders, architecture design, database modeling, project planning, and contract negotiation. If people hold **different mental models** of the same system, misunderstandings and defects follow.
+
+**Domain Driven Design** (Evans, 2004) refocuses on the importance of a common terminology — a **ubiquitous language** — shared by developers and domain experts so that the code reflects the domain model directly.
+
+### Modeling Dimensions
+
+Two orthogonal dimensions classify any model:
+
+| Dimension | Question | Options |
+|-----------|----------|---------|
+| **Modeling Object** | What is modeled? | **Domain Model** (application domain — real-world concepts only) vs. **System Model** (system architecture — includes implementation concepts) |
+| **Modeling Purpose** | What is it modeled for? | **Conceptual Model** (understandability over formality — whiteboard sketch) vs. **Specification Model** (formally precise — can generate code/tests) |
+
+**Example — Address Book:**
+- **Domain Model:** Address Book → Entry → Phone Number (real-world concepts only)
+- **System Model:** same + Currently Opened Entry, Entry Database, Cloud Connector (implementation concepts added)
+
+> **Important:** A **conceptual** model prioritizes shared understanding; a **specification** model prioritizes formal precision (full types, constraints, code generation). Both can be either domain or system models.
+
+---
+
+## UML Class Diagrams
+
+Class diagrams are the primary **structure diagram** in UML — they show classes, attributes, operations, and the relationships between classes.
+
+### Classes and Objects
+
+- An **object** is a concrete instance with specific attribute values
+- A **class** is a generalized type describing shared structure and behavior for its objects
+
+A UML class is drawn as a rectangle with three compartments:
+
+| Compartment | Content | Syntax |
+|-------------|---------|--------|
+| **Name** | Class name (bold, centered) | `ClassName` |
+| **Attributes** | Data the class holds | `<visibility> <name> : <type>` |
+| **Operations** | Behavior the class provides | `<visibility> <name>(<params>:<types>) : <returnType>` |
+
+### Associations
+
+> **Definition:** An **association** connects two (or more) classes, indicating that instances of those classes can be linked. A **link** is a concrete instance of an association between specific objects.
+
+- **Rolenames** label each end of an association, describing the role an object plays in the relationship
+- Associations are drawn as solid lines between classes
+
+### Multiplicities
+
+Multiplicities specify how many objects can participate in an association:
+
+| Notation | Meaning |
+|----------|---------|
+| `0..1` | Optional (zero or one) |
+| `1` | Exactly one (always) |
+| `*` or `0..*` | Zero or more |
+| `1..*` | One or more |
+| `n..m` | At least n, at most m |
+
+> **Important:** Multiplicities map directly to code — e.g., `*` translates to an array/list field, `1` to a mandatory single reference, `0..1` to a nullable/optional reference.
+
+
+### Generalization (Inheritance)
+
+- A **subtype** is a subgrouping of a supertype with distinct additional attributes or behavior
+- A **supertype** is a generic class with a generalization relationship to its subtypes
+- **Attribute inheritance:** subtypes inherit all supertype attributes; an instance of a subtype **IS** an instance of the supertype
+- **Association inheritance:** supertype associations apply to all subtypes; subtype-specific associations apply only to that subtype
+- **Notation:** hollow triangle arrow pointing from subtype → supertype
+
+
+### Packages
+
+> **Definition:** **Packages** define named regions that group related model elements — similar to folders defining paths to files.
+
+Packages organize classes into logical groups (e.g., Context, System, Database, UI). A class's fully qualified name includes its package path.
+
+### Visibility (Access Operators)
+
+| Symbol | Name | Accessible From |
+|--------|------|----------------|
+| `+` | Public | All classes with access to this package |
+| `~` | Package | Only inside this package |
+| `#` | Protected | This class and all subclasses |
+| `-` | Private | Only this class |
+
+---
+
+## Creating Data Models from Text: Noun-Phrase Method
+
+> **Definition:** The **Noun-Phrase Method** is a systematic technique for deriving UML class diagrams from natural-language requirements descriptions.
+
+### Steps
+
+1. **Identify noun phrases** in the system description → these are **candidate classes**
+2. **Filter out** inappropriate candidates:
+   - **Redundant** — same concept under different names
+   - **Attributes** — properties of a class, not classes themselves
+   - **Outside scope** — not part of the system under development
+   - **Operations/events** — actions, not structural elements
+   - **Vague** — too abstract to be a meaningful class
+   - **Wrong level of detail** — too fine-grained or too coarse
+3. **Identify verb phrases** → these suggest **operations** and/or **associations** between classes
+
+> **Important:** The noun-phrase method provides a repeatable way to go from requirements text → candidate classes → UML class diagram. It is a starting point — domain knowledge and iteration are still needed to refine the model.
+
+---
+
+## Models vs. Diagrams
+
+| Concept | Definition |
+|---------|-----------|
+| **(System) Model** | Contains **all** system elements and their relations; structured as a hierarchical tree |
+| **Diagram** | Visualizes a **selection** of elements and relations; a graphical view of part of the model |
+
+Key distinctions:
+
+- One **model element** can appear in **many** diagrams
+- A model element **not shown** in any diagram is **still part of the model**
+- You can create a model **without any diagrams** at all — the model is the source of truth, diagrams are just views
+
+---
+
+## Model-Based Systems Engineering (MBSE)
+
+> **Definition:** **MBSE** replaces document-centric engineering with a unified model that serves as the single source of truth for all system information.
+
+### Document-Based vs. MBSE
+
+| Aspect | Document-Based Engineering | MBSE |
+|--------|---------------------------|------|
+| **Artifact** | Document types and structure | Types, Relations, Traces |
+| **Organization** | Separate specs (requirements, architecture, tests) managed by different people | Unified model with shared information architecture |
+| **Consistency** | Manual cross-referencing between documents | Automatic traceability between elements |
+
+### MBSE Benefits
+
+- **Validate** requirements against the model
+- **Analyze** impact of change across all related elements
+- **Verify** design consistency automatically
+- **Generate** artifacts (documents, code, test cases) from the model
+
+> **Important:** All diagram types (use case, activity, class) live in **one model** — a change to a model element automatically propagates to every diagram that references it. This eliminates the inconsistency problem of document-based approaches.
+
+================================================================================
+
+## Context in the Krcmar Model
+
+This chapter covers the **Information and Communication Technologies (ICT)** layer — the bottom layer of the Krcmar model. ICT provides the technological foundation (storage, processing, communication) that supports the Information Systems layer above it.
+
+---
+
+## IT Infrastructure Definitions
+
+> **Definition:** Duncan (1995) defined IT infrastructure as *a set of shared, tangible IT resources that provide a foundation to enable present and future business applications*.
+
+Duncan structures these tangible resources into four groups:
+
+| Group | Examples |
+|-------|----------|
+| **Hardware** | Computers, servers, printing, peripherals |
+| **Network and telecommunications** | Cable, phones, video equipment |
+| **Data** | Databases, data warehouses |
+| **Core data-processing applications** | Core systems, e.g. ERP, CRM |
+
+> **Important:** Duncan's definition focuses on *tangible* resources. Other definitions of IT infrastructure also include people, organizational structures, and management processes — broadening the concept beyond physical assets.
+
+---
+
+## Management of ICT
+
+### CIO's ICT Responsibilities
+
+The CIO has four key jobs in managing ICT:
+
+| # | Responsibility |
+|---|---------------|
+| 1 | **Observing and evaluating** technological developments |
+| 2 | **Strategic planning** of technological decisions |
+| 3 | **Development and protection** of competitively relevant technologies |
+| 4 | **Internal and external exploitation** of technological capabilities (e.g. licensing) |
+
+> **Important:** The central strategic question is: *Do you want to play the leader or the follower strategy?* Leaders invest early in emerging technologies for competitive advantage; followers wait for technologies to mature, reducing risk but potentially missing first-mover benefits.
+
+### The Innovation Matrix
+
+In practice, most ICT work is not about innovation. The reality of how IT effort is distributed:
+
+
+| Quadrant | Strategy | Knowledge | Share |
+|----------|----------|-----------|-------|
+| **I** | Do what we do now, only better | Existing knowledge | **72%** |
+| **II** | Do new things | Existing knowledge | **8%** |
+| **III** | Do what we do now, only better | Leading-edge discoveries | **8%** |
+| **IV** | Do new things | Leading-edge discoveries | **2%** |
+
+> **Important:** The CIO's primary job in ICT management is to **keep the services running** and **watch what's going on**. The vast majority of effort (72%) is about incremental improvement using existing knowledge — not cutting-edge innovation.
+
+---
+
+## The Gartner Hype Cycle
+
+The **Hype Cycle** is Gartner's framework for tracking how emerging technologies move from initial excitement through disillusionment to productive adoption. It helps CIOs decide **when** to invest — directly informing the leader vs. follower strategy.
+
+> **Definition:** The Hype Cycle plots technology **expectations** (y-axis) against **time** (x-axis), producing a characteristic curve with five phases: Innovation Trigger, Peak of Inflated Expectations, Trough of Disillusionment, Slope of Enlightenment, and Plateau of Productivity.
+
+
+### The Five Phases
+
+| Phase | What Happens | Market Signals |
+|-------|-------------|----------------|
+| **Innovation Trigger** | R&D breakthrough or product launch sparks interest | Startup companies, first round of venture capital funding; first-generation products (high price, lots of customization needed) |
+| **Peak of Inflated Expectations** | Mass media hype; expectations far exceed actual capability | Supplier proliferation; activity beyond early adopters; negative press begins as reality falls short |
+| **Trough of Disillusionment** | Failures and disappointments dominate; interest wanes | Supplier consolidation and failures; second/third rounds of VC funding only for survivors; less than 5% of potential audience has adopted fully |
+| **Slope of Enlightenment** | Practical use cases emerge; benefits become clearer | Second-generation products, some services; methodologies and best practices developing |
+| **Plateau of Productivity** | Mainstream adoption; technology delivers real value | Third-generation products (out of the box, product suites); high-growth adoption starts — 20–30% of potential audience has adopted |
+
+### Hype Cycle Methodology
+
+The Hype Cycle is a **structured, qualitative research tool** — not an empirical science. Gartner positions technologies on the curve based on a **consensus assessment** of hype and maturity, using market signals and proxy indicators.
+
+Key nuance: in the **early phases** (Innovation Trigger, Peak), a technology's position is driven **more by hype levels and market expectation than by its maturity**. In the **later phases** (Slope, Plateau), actual maturity, performance, and adoption data take over.
+
+> **Important:** The Hype Cycle is a **management decision tool, not an academic endeavor** (Gartner's own description). For a CIO, it answers the leader/follower question: *leaders* invest at the Innovation Trigger (high risk, high potential reward); *followers* wait for the Slope of Enlightenment (lower risk, proven value). Most CIOs should avoid investing heavily at the Peak — that is when expectations are most inflated and disappointment is most likely.
+
+---
+
+## Cloud Computing
+
+### Cloud Service Models
+
+Cloud computing delivers IT resources as services over a network, structured into three primary models:
+
+| Model | What You Rent | You Manage | Provider Manages | Example |
+|-------|--------------|------------|-----------------|---------|
+| **IaaS** (Infrastructure as a Service) | Fully serviced hardware (e.g. a VM) | OS, runtime, apps | Servers, storage, networking | AWS EC2, Hetzner, IONOS |
+| **PaaS** (Platform as a Service) | Fully serviced computer system to run your service or container | Apps, data | OS, runtime, servers, storage | AWS Elastic Beanstalk |
+| **BaaS** (Backend as a Service) | Ready-made backend (auth, DB, storage) | Frontend app | Entire backend stack | Firebase |
+| **SaaS** (Software as a Service) | Fully serviced software | Nothing (just use it) | Everything | Salesforce |
+
+The cloud provides three layers of services:
+
+| Layer | Services |
+|-------|----------|
+| **Infrastructure Services** | Computing resource management, Network management, Storage management |
+| **Application Services** | Content management, Enterprise software, Collaboration environments, Process management |
+| **Platform Services** | Block storage, Communication networks, Identity management, Content servers |
+
+These services are accessed by end-user devices (laptops, desktops, phones, tablets) connecting through servers.
+
+### The Computing Stack
+
+The full computing stack maps each layer to a cloud service model:
+
+
+> **Important:** The higher up the stack you consume as a service, the less you manage yourself — but the less control you have. IaaS gives maximum flexibility; SaaS gives zero operational burden.
+
+---
+
+## Virtualization
+
+> **Definition:** **Virtualization** replaces the traditional model of one operating system per physical machine with **multiple virtual machines (VMs)** running on a single physical host, managed by a **hypervisor**.
+
+| Aspect | Detail |
+|--------|--------|
+| **Core idea** | Multiple VMs share one physical hardware via a hypervisor |
+| **Resource flexibility** | Virtual hardware for each VM can change; resources are moved between VMs based on demand |
+| **Isolation** | VMs are fully isolated — no file access from VM A to VM B, just like separate physical machines |
+| **Portability** | VMs can be exchanged between multiple hypervisors |
+
+---
+
+## Containerization
+
+> **Definition:** **Containers** are lightweight alternatives to VMs. Multiple containers run on one system, sharing the host OS kernel through a **container runtime** instead of each needing its own OS via a hypervisor.
+
+| Aspect | VMs | Containers |
+|--------|-----|------------|
+| **Abstraction layer** | Hypervisor | Container Runtime |
+| **OS** | Each VM has its own full OS | Shared host OS kernel |
+| **Weight** | Heavy (full OS per instance) | Lightweight (only app + bins/libraries) |
+| **Isolation** | Strong (separate OS) | Process-level (shared kernel) |
+| **Coupling** | Isolated by design | Designed to be easily coupled |
+| **Use case** | Full environments, legacy apps | Smaller services (database, web, API) that interact |
+
+### Traditional vs. Virtualized vs. Container Deployments
+
+
+> **Important:** The evolution from Traditional → Virtualized → Container reflects a trend toward lighter-weight isolation. VMs virtualize the *hardware* (each VM runs a full OS); containers virtualize the *operating system* (containers share the host kernel). This makes containers faster to start, smaller in size, and easier to scale — but with weaker isolation than full VMs.
+
+---
+
+## Distributed Systems
+
+> **Definition:** "A distributed system is one in which the failure of a computer you didn't even know existed can render your own computer unusable." — Leslie Lamport
+
+This quote captures the fundamental challenge of distributed computing: as cloud, virtualization, and containerization spread workloads across many machines, **failures become harder to predict and isolate**. A service you depend on may run on infrastructure you have no visibility into — and when it fails, your system fails too.
+
+> **Important:** Distributed systems are the inevitable consequence of cloud computing and containerized microservices. Understanding that failure is *normal* in distributed environments — and designing for resilience (redundancy, graceful degradation, circuit breakers) — is a core ICT management concern.
+
+================================================================================
+
+## Context in the Krcmar Model
+
+IT Strategy belongs to the **Managing Information Management** layer — the overarching governance block of the Krcmar model (see Chapter 1). This layer includes IT Strategy, IT Governance, IT Processes, IT HR, IT Controlling, and IT Security. This chapter focuses on the first of these: how organizations formulate and align their IT strategy with business goals.
+
+---
+
+## The Business-IT Relationship
+
+The relationship between business and IT can be understood at two levels of complexity.
+
+**Simple loop:** Business "defines goals for" IT, and IT "transforms" Business.
+
+**Extended loop (with Business Context):** The real world is more nuanced — a third element, Business Context, shapes the competitive landscape that business operates in.
+
+
+> **Important:** A McKinsey 2016 survey (n=709) found that most companies treat IT as a **Supplier** (a technology service provider), but most executives believe IT *should* be a **Partner** (actively collaborating to shape strategy). The gap between current and desired role is significant — IT strategy is about closing that gap.
+
+### Three Core IT Management Questions
+
+IT management is always caught between two tensions: achieving **strategic advantages through IT investments** and maintaining **short-term IT cost control**. Three core questions guide this balance:
+
+1. **Which** IT services should be provided?
+2. **Who** provides these IT services?
+3. **Are** the IT services provided correctly (efficiently and effectively)?
+
+---
+
+## Strategy Foundations
+
+> **Definition:** A **strategy** is a plan of action to achieve a particular goal. Short-term strategies typically cover the next 6 months; long-term strategies span 3–5 years.
+
+> **Definition:** **Strategic Management** (Smith/Arnold/Bizzell, 1986) is the process of examining both present and future environments, formulating the organization's objectives, and making, implementing, and controlling decisions focused on achieving these objectives.
+
+### Earl's Three Strategy Types (1989)
+
+| Strategy | Question | Focus |
+|----------|----------|-------|
+| **IS Strategy** | What? | Business applications of IT — aligning them with business needs and deriving strategic benefits |
+| **IT Strategy** | How? | Technology architecture, technical standards, security levels, risk attitudes, technology policies |
+| **IM Strategy** | Who? Where? | Structures and roles for managing IS and IT — specialist/user relationships, management control, performance measurement |
+
+### Basic Strategy 101 — Five Simplified Steps
+
+1. Identify business strategy and goals
+2. Break goals down into concrete activities and processes
+3. Identify metrics to measure progress towards these goals
+4. Identify how IT can help progress for these activities
+5. Measure actual performance
+
+Steps 2–5 are supported by known tools (Balanced Scorecards, KPIs, OKRs, GQM). The hard part is **Step 1**: identifying the right business strategy.
+
+### Contents of a Concrete IT Strategy Document
+
+- Competitive analysis and forecasting
+- Mission statement, goals and basic tasks
+- Strengths and weaknesses of own ICT system and technology on the market
+- Assessment of future technology development
+- Hardware and software policy
+- Priority rules for IT projects
+- Organizational developments in the company
+- Guidelines, standards, and norms
+- Personnel development in IT
+
+---
+
+## Competitive Advantage: Market-Based View (MBV)
+
+The **Market-Based View** focuses on external competitive forces. The central idea: industry structure determines profitability, and strategy should position the firm advantageously within that structure.
+
+### Porter's Five Competitive Forces
+
+> **Definition:** Porter's Five Forces framework identifies five forces that determine the competitive intensity and attractiveness of a market.
+
+
+These five forces determine how much value an industry creates and how that value is divided among competitors, new entrants, suppliers, customers, and substitute products.
+
+### Porter's Generic Strategies
+
+| Strategy | How IS Supports It |
+|----------|-------------------|
+| **Low-cost leadership** | Use IS to produce products/services at lower price than competitors while enhancing quality and service level |
+| **Product differentiation** | Use IS to differentiate products, enable new services and products |
+| **Focus on market niche** | Use IS to enable a focused strategy on a single market niche; specialize |
+| **Customer and supplier intimacy** | Use IS to develop strong ties and loyalty with customers and suppliers |
+
+### Porter's Strategy Matrix (2x2)
+
+
+---
+
+## Competitive Advantage: Resource-Based View (RBV)
+
+The **Resource-Based View** takes the opposite perspective from MBV: success depends on **internal resources and capabilities**, not just the competitive landscape.
+
+### Three Levels of Internal Strength
+
+| Level | Responsibility | Focus |
+|-------|---------------|-------|
+| **Vision** | C-level | Strategic direction |
+| **Capabilities** | Middle management | Ability to adapt resources and competencies to changing environments; using resources efficiently and effectively |
+| **Resources** | Product & project management | Fixed assets, human capital, money, reputation/brands, management team, technology and patents, organizational culture, organizational structure |
+
+### Tangible vs. Intangible Resources
+
+How to gain advantage through RBV:
+- Keep **tangible resources** (e.g. factories, hardware) up to date
+- Develop **intangible resources** (e.g. employee skills, culture, creativity), capabilities, and vision
+
+### VRIN Criteria
+
+Resources and capabilities must satisfy **all four** criteria for sustainable strategic advantage:
+
+| Criterion | Meaning |
+|-----------|---------|
+| **V**aluable | The resource provides value to the firm |
+| **R**are | Not widely available to competitors |
+| **I**nimitable | Difficult or impossible to copy |
+| **N**on-Substitutional | No equivalent substitute exists |
+
+> **Important:** All four VRIN criteria must be met simultaneously. A resource that is valuable and rare but easy to imitate will not provide a lasting competitive advantage.
+
+---
+
+## SWOT Analysis — Synthesis of MBV + RBV
+
+**SWOT** combines the external analysis of MBV with the internal analysis of RBV into a single framework.
+
+
+> **Important:** SWOT is the bridge between the two schools of competitive strategy. Strengths and Weaknesses come from internal analysis (RBV) — what the organization is good or bad at. Opportunities and Threats come from external analysis (MBV) — what the market allows or threatens. Effective strategy addresses all four quadrants.
+
+---
+
+## Strategic Alignment
+
+The final piece: how do we ensure that business strategy and IT strategy are actually working together?
+
+### Key Definitions
+
+> **Definition:** **Strategic Fit** (Porter, 1996) — Strategic fit among many activities is fundamental not only to competitive advantage but also to the sustainability of that advantage. It is harder for a rival to match an array of interlocked activities than to imitate a single approach.
+
+> **Definition:** **Strategic Alignment** (Reich & Benbasat, 2000) — The extent to which the business mission, objectives, and plans are supported by the IS mission, objectives, and plans.
+
+> **Definition:** **Alignment** (Henderson & Venkatraman, 1993) — The degree of fit and integration among business strategy, IT strategy, business infrastructure, and IT infrastructure.
+
+### The Strategic Alignment Model (SAM)
+
+Henderson & Venkatraman (1993) proposed a 2x2 framework with four quadrants, organized along two dimensions: **Strategic Fit** (external strategy vs. internal infrastructure) and **Functional Integration** (business side vs. IT side).
+
+
+### Two Dimensions of Alignment
+
+- **Strategic Fit:** Aligning external positioning (strategy) with internal arrangement (infrastructure and processes)
+- **Functional Integration:** Aligning the business domain with the IT domain
+
+### Four Dominant Alignment Perspectives
+
+| Perspective | Driver | Top Mgmt Role | IS Mgmt Role | Performance Criteria |
+|-------------|--------|---------------|--------------|---------------------|
+| **Strategy Execution** | Business Strategy | Strategy Formulator | Strategy Implementor | Cost/Service Center |
+| **Technology Transformation** | Business Strategy | Technology Visionary | Technology Architect | Technology Leadership |
+| **Competitive Potential** | I/T Strategy | Business Visionary | Catalyst | Business Leadership |
+| **Service Level** | I/T Strategy | Prioritizer | Executive Leadership | Customer Satisfaction |
+
+> **Important:** The SAM model shows that alignment is not a one-time exercise — it requires continuous attention across all four perspectives. The choice of dominant perspective determines the roles of top management and IS management, and shapes how IT performance is measured.

@@ -1,0 +1,122 @@
+Information Management
+Prof. Dr. Henning Femmer
+Final Exam
+February 6th, 2023
+
+Name: ___________________________
+Matrikelnummer: ___________________________
+
+This exam contains 4 tasks on 8 pages. Please check if a page is missing.
+You have 90 minutes to answer the tasks. This is a closed book exam,
+aids are not permitted in any form.
+
+        T1    T2    T3    T4    Sum
+Max.     1     6    12    15     34
+Yours   ___   ___   ___   ___   ___
+
+================================================================================
+
+Task 1: Foundations (1 Point)
+
+Tick all the correct answers to the following questions. Zero, one, several or all answers can
+be correct. (1 point per subtask with only correctly placed crosses, 0 points otherwise)
+
+1. Which of the topics are part of your job as a CIO?
+
+   [ ] Watching new technologies
+   [ ] Lawn Maintenance
+   [ ] Defining a Business Strategy
+   [ ] Keeping information stakeholders happy
+
+================================================================================
+
+Scenario
+
+The following scenario serves as the basis for all of the following tasks.
+
+A family-run screw manufacturer (a medium enterprise) that is a world market leader in a
+specialized type of wood screws has come up with a new idea to incorporate sensors into
+their screws. The sensors will be able to detect when a screw is being over-stressed, losing
+pressure, or experiencing any other issues, and will send out an alert to the relevant parties.
+
+The company, which has been in business for several decades, has built a reputation for pro-
+ducing high-quality and reliable screws that are used in a wide range of industries, from con-
+struction and manufacturing to aerospace and defense. However, as the demand for their
+screws has grown, the company has become increasingly concerned about the potential for
+screws to fail in the field, leading to costly downtime and repairs. When asking companies,
+which suffered from costly downtime and repairs, 90% of those customers reported that they
+would pay up to 100x the prices of regular screws for an improved screw.
+
+At the same time, an American researcher published a paper on a novel micro-sensor tech-
+nology (MiSe), which received very little attention yet. So, to address the company issue, the
+company's management team has decided to invest in the development of MiSe, so that it
+can be integrated into the screws. The sensors will be able to detect when a screw is ap-
+proaching its maximum load capacity and will send an alert to the relevant parties, such as
+maintenance crews or engineers, so that they can take action before the screw fails.
+
+The company is working closely with a team of engineers and developers to design and test
+the sensors, which will be small, low-power, and highly reliable. The sensors will be able to
+communicate with other devices, such as smartphones or laptops, via Bluetooth or other
+wireless technologies, so that the data can be analyzed in real-time. The system can also be
+configured, depending on the risk a company is willing to take.
+
+The company sees this new technology as a way to further differentiate their product and
+also to increase customer satisfaction. They also hope that this technology will help prevent
+accidents and increase safety. Finally, they want to include a hidden feature to track cus-
+tomer usage data. The implementation of this new technology will take a few months but the
+company is confident that the added value of the sensors will pay off in the long run.
+
+The company plans to offer this new sensor-enabled screw as an upgrade option to its exist-
+ing customers and also to market it as a new product. They also plan to patent the technol-
+ogy to protect their intellectual property.
+
+(Disclaimer: This scenario was created with the help of ChatGPT, Jan 9, 2023 version.)
+
+================================================================================
+
+Task 2: Terminology (6 Points)
+
+a) Explain the terms Symbols, Data, Information, and Knowledge in one sentence each.
+   Give an example for each term from the scenario. (3 points)
+
+b) 90% of customers would pay up to 100 times the original price for a better screw:
+   Which relevant context information was left out when transforming this information?
+   How does it change your interpretation of the data? (3 points)
+
+================================================================================
+
+Task 3: Management of Information Technology and Information Systems (12 Points)
+
+a) Describe your company's assessment regarding the choice of MiSe. Apply the termi-
+   nology of the Gartner Hype Cycle. (3 points)
+
+b) Describe possible outcomes of this choice over time (again applying the Gartner
+   Hype Cycle model and terminology). (3 points)
+
+c) Write a short assessment of the company's decision. Apply Strategies after Porter to
+   support your argument. (3 points)
+
+d) Now you are in charge for executing the project. Briefly summarize how you manage
+   the project. (3 points)
+
+================================================================================
+
+Task 4: Management of Information Technology and Information Systems (15 Points)
+
+a) The interaction of the system with the company's administration is still unclear.
+   Where would you store the data? Please describe your choice of SaaS, IaaS, PaaS
+   and cloud technologies. (3 points)
+
+b) Draw a Use Case diagram from the scenario. Extract minimum three use cases from
+   the scenario and add further three based on the stakeholder's goals. (6 points)
+
+c) Specify the interaction of reporting necessary replacement to the customer as a Use
+   Case using the following template: (6 points)
+
+   Name:                  UC01-Report necessary replacement
+   Goal in Context:       ___________________________________________
+   Precondition:          ___________________________________________
+   Success End Condition: ___________________________________________
+   Failed End Condition:  ___________________________________________
+   Main Success Scenario: ___________________________________________
+   Alternatives:          ___________________________________________
