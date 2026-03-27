@@ -19,11 +19,11 @@ const groupedChapters = sortedChapters.reduce((acc, chapter) => {
 <MainLayout title="Overview">
   <div class="mb-8">
     <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-      Information Management Study Guide
+      Documentation
     </h1>
     <p class="text-lg text-gray-600 dark:text-gray-400">
-      A comprehensive study resource for exam preparation. Each chapter contains clear explanations
-      of key concepts extracted from lecture materials.
+      A structured collection of chapters and notes. Add your content to
+      <code class="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-sm">src/content/chapters/</code> to get started.
     </p>
   </div>
 
@@ -76,27 +76,4 @@ const groupedChapters = sortedChapters.reduce((acc, chapter) => {
     </div>
   )}
 
-  <div class="mt-12 p-6 bg-gradient-to-r from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 rounded-xl border border-primary-200 dark:border-primary-800">
-    <h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Study Tips</h2>
-    <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-      <li class="flex items-start gap-2">
-        <svg class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-        </svg>
-        <span>Read through each concept carefully and take notes</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <svg class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-        </svg>
-        <span>Pay attention to the key points highlighted in each section</span>
-      </li>
-      <li class="flex items-start gap-2">
-        <svg class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-        </svg>
-        <span>Use the dark mode toggle for comfortable reading in low light</span>
-      </li>
-    </ul>
-  </div>
 </MainLayout>

@@ -10,7 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture
 
-This is an **Astro** static site for Information Management study materials, using **Tailwind CSS** with dark mode support.
+This is an **Astro** static site documentation starter template, using **Tailwind CSS** with dark mode support.
 
 ### Content System
 
